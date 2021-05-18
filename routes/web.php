@@ -21,6 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/transferir', 'TransferirController@transferir')->name('transferir');
+Route::get('/estornar/{id}', 'TransferirController@estornar')->name('estornar');

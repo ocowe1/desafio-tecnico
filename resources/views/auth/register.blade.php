@@ -59,7 +59,7 @@
 
                             <div class="col-md-6">
 
-                                <input id="cpfcnpj" type="text" maxlength="14" onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' class="form-control @error('cpfcnpj') is-invalid @enderror" name="cpfcnpj" value="{{ old('cpfcnpj') }}" required autofocus>
+                                <input id="cpfcnpj" type="text" maxlength="17" onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' class="form-control @error('cpfcnpj') is-invalid @enderror" name="cpfcnpj" value="{{ old('cpfcnpj') }}" required autofocus>
 
                                 @error('cpfcnpj')
                                 <span class="invalid-feedback" role="alert">
